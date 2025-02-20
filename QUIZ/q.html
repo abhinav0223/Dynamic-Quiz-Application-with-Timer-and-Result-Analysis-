@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dynamic Quiz Application</title>
+    <link rel="stylesheet" href="quiz.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+
+    <!-- Quiz Difficulty Selection -->
+    <div id="quiz-settings">
+        <h2>Select Quiz Difficulty</h2>
+        <label for="difficulty">Choose Difficulty:</label>
+        <select id="difficulty">
+            <option value="easy">Easy</option>
+            <option value="medium">Medium</option>
+            <option value="hard">Hard</option>
+        </select>
+        <button id="startQuiz">Start Quiz</button>
+    </div>
+
+    <!-- Quiz Section -->
+    <div id="quiz-section" style="display: none;">
+        <h2 id="question"></h2>
+        <ul id="options"></ul>
+        <p>Time Left: <span id="time">10</span> seconds</p>
+    </div>
+
+    <!-- Scripts -->
+    <script src="questions.js"></script>
+    <script src="script.js"></script>
+
+</body>
+</html>
